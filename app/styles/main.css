@@ -41,6 +41,10 @@
    margin-right:auto;
    position:static;
 }
+.seal-hover{
+  opacity: 0.5;
+}
+
 .letter-bot{
    background-color:#f0dab1;
    box-shadow: inset 0px 9px 20px 1px #d4b06e, inset 0px 0px 11px 0px #d4b06e;
