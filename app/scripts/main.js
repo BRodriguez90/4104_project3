@@ -20,12 +20,13 @@ $(function(){
       setTimeout(function(){
          $('.letter-top').remove(); // remove the top of the letter
          $('#audio').remove(); // remove audio once "letter opens"
-          var about = $('.about').val();
-        console.log(about);
       },2000);
+      
       $('.doc-wrapper').fadeIn(); // fade in the rest of the website.
 
      
    }); // end letter top - bot animation 
+   
 
 }); // end of document ready 
+ 
