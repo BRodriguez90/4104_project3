@@ -4,12 +4,13 @@ $(function(){
    $('doc-wrapper').hide();
 
    $('.seal').hover(function(){
-       $('.seal').toggleClass('seal-hover');
+     $('.seal').toggleClass('seal-hover');
    });
 
    $('.letter-top,.letter-bot').click(function(){ // when click on top or bottom flap of letter trigger function
       audio.play();
       $('.letter-top').slideToggle(1200); // toggle top flap of letter
+      
       //$('.letter-bot').slideToggle(1500);
       $('.letter-bot').fadeOut(1300);  // fade out bottom flap of letter
 
