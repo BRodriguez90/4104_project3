@@ -1,21 +1,25 @@
 console.log('\'Allo \'Allo!');
-var smallCircles= ['top','right','bottom','left','top'];
 $(function(){
-  $('#fullpage').fullpage({
-    
-    navigation: true,
-    scrollingSpeed: 750
-  });
-
+ 
+    ko.applyBindings({
+        userName: ko.observable('test')     // Initially blank
+    });
    $('.about').hide();
-   $('doc-wrapper').hide();
+   //$('doc-wrapper').hide();
 
-   $('.seal').hover(function(){
+   $('.seal').hover(function(){           //fade out seal on hover
      $('.seal').toggleClass('seal-hover');
    });
 
    $('#seal-top,#seal-bot').click(function(){ // when click on top or bottom flap of letter trigger function
       audio.play();
+
+       $('#fullpage').fullpage({
+    
+        navigation: true,
+        scrollingSpeed: 750
+      });
+
       $('.letter-top').slideToggle(1100); // toggle top flap of letter
       
       //$('.letter-bot').slideToggle(1500);
@@ -30,8 +34,8 @@ $(function(){
          $('#audio').remove(); // remove audio once "letter opens"
       },2000);
       
-      $('.doc-wrapper').fadeIn(); // fade in the rest of the website.
-
+     // $('.doc-wrapper').fadeIn(); // fade in the rest of the website.
+     $('#fullpage').fadeIn();
      
    }); // end letter top - bot animation 
    

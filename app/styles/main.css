@@ -105,9 +105,17 @@ p.about{
   font-size:1.15em;
 }
 
-
+/*=========Second Section=========*/
+#fullpage{
+  display:none;
+}
+.jumbotron{
+  background-color:#f5e1bc;
+  box-shadow:0px 0px 10px #928065;
+}
 .doc-wrapper{
-   display:none;
+   /*display:none;*/
+   background-color:#fbecd1;
 }
 
 hr{

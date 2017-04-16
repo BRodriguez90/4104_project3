@@ -37,6 +37,10 @@
       <img src="images/seal_top.png" class="seal" id="seal-top" alt="Letter Seal" width="250" height="120">
     </div>
   </div>
+  <audio id="audio">
+     <source src="letter.ogg" type="audio/ogg">
+     <source src="letter.mp3" type="audio/mpeg">
+  </audio>
   <div class="letter-bot">
     <div class="seal-bot-cont">
       <img src="images/seal_bot.png" class="seal" id="seal-bot" alt="Letter Seal" width="250" height="115">
@@ -45,8 +49,8 @@
   <div id="fullpage">
     <div class="section">
       <div class="letter-cont">
-        <audio id="audio" src="letter.ogg" type="audio/ogg"></audio>
-        <p class="about">To:</p>
+        <p class="about" data-bind="textInput: userName" >To:</p>
+
         <p class="about" id="about-body">
           The Spanish-American War took place in 1898. Magna sit proident voluptate aliqua Lorem excepteur anim eiusmod excepteur aute.
           Mollit qui est cupidatat fugiat dolore in do laborum incididunt aliqua excepteur nulla officia.
