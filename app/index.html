@@ -13,6 +13,7 @@
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -30,8 +31,6 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<div id="fullpage">
-<div class="section">
   <div class="letter-top">
     <h1 class="text-center" id="letter-title"> Spanish American War</h1>
     <div class="seal-top-cont">
@@ -43,61 +42,119 @@
       <img src="images/seal_bot.png" class="seal" id="seal-bot" alt="Letter Seal" width="250" height="115">
     </div>
   </div>
-  </div> <!-- End section 1 --> 
-  <div class="letter-cont">
-     <audio id="audio" src="letter.mp3" style="display:none"></audio>
-    <p class="about">
-      The Spanish-American War took place in 1898.
-    </p>
-    <div class="continue"></div>
-  </div> <!-- .letter-cont -->
-  <div class="doc-wrapper">
-    <div class="header">
-      <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-inverse p-4">
-            <h4 class="text-white">Collapsed content</h4>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-          </div>
-        </div>
-        <nav class="navbar navbar-inverse bg-inverse">
-           <a class="navbar-brand" href="#">SA War</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+  <div id="fullpage">
+    <div class="section">
+      <div class="letter-cont">
+        <audio id="audio" src="letter.mp3" style="display:none"></audio>
+        <p class="about">To:</p>
+        <p class="about" id="about-body">
+          The Spanish-American War took place in 1898. Magna sit proident voluptate aliqua Lorem excepteur anim eiusmod excepteur aute.
+          Mollit qui est cupidatat fugiat dolore in do laborum incididunt aliqua excepteur nulla officia.
+        </p>
+        <div class="continue"></div>
+      </div>
+      <!-- .letter-cont -->
+    </div>
+    <div class="section">
+      <div class="doc-wrapper">
+        <div class="header">
+          <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-inverse p-4">
+                <h4 class="text-white">Collapsed content</h4>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+              </div>
+            </div>
+            <nav class="navbar navbar-inverse bg-inverse">
+              <a class="navbar-brand" href="#">SA War</a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
-        </nav>
+            </nav>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-center" id="nations">Nations Involved</h2>
+            </div>
+          </div>
+          <div class="jumbotron">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="usa">
+                      <img src="images/usa.svg" alt="USA Flag" width="250" height="130">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="spain">
+                      <img src="images/spain.svg" alt="Spain Flag" width="250" height="130">
+                    </div>
+                  </div>
+                </div>
+                <!-- end row-->
+              </div>
+              <div class="col-lg-6">
+                <p class="text-left nation-about">
+                  Cillum eu Lorem id cillum est amet ad anim labore incididunt culpa est elit irure. 
+                  Aliquip occaecat quis magna minim culpa sunt culpa duis mollit exercitation nulla elit aliqua.
+                  Consectetur consectetur reprehenderit consectetur duis.
+                </p>
+              </div>
+              <!--end col-6-->
+            </div>
+            <hr>
+            <!-- end row-->
+            <div class="row">
+              <div class="col-lg-6">
+                <p class="text-left nation-about">
+                  Cillum eu Lorem id cillum est amet ad anim labore incididunt culpa est elit irure. Aliquip occaecat quis magna minim culpa
+                  sunt culpa duis mollit exercitation nulla elit aliqua.
+                  Mollit anim fugiat elit ipsum nisi aute et eu quis elit do in.
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="cuba">
+                      <img src="images/cuba.svg" alt="Cuba Flag" width="250" height="130">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="filipino">
+                      <img src="images/filipino.svg" alt="Philippines Flag" width="250" height="130">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end col-6-->
+            </div>
+          </div>
+
+          <div class="row marketing">
+            <div class="col-lg-6">
+
+            </div>
+          </div>
+
+          <div class="footer">
+
+          </div>
+        </div>
       </div>
     </div>
-<div class="container-fluid"> 
-    <div class="jumbotron">
-
-    </div>
-
-    <div class="row marketing">
-      <div class="col-lg-6">
-        <h4>HTML5 Boilerplate</h4>
-        <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-        <hr>
-        <h4>Bootstrap</h4>
-        <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-        <h4>Modernizr</h4>
-        <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-      </div>
-    </div>
-
-    <div class="footer">
-
-    </div>
+    <!-- Section 2 End-->
   </div>
-</div>
-</div> <!-- Full page End-->
+  <!-- Full page End-->
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
-    (function(b, o, i, l, e, r) {
+    (function (b, o, i, l, e, r) {
       b.GoogleAnalyticsObject = l;
       b[l] || (b[l] =
-        function() {
+        function () {
           (b[l].q = b[l].q || []).push(arguments)
         });
       b[l].l = +new Date;
@@ -108,6 +165,7 @@
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X');
     ga('send', 'pageview');
+
   </script>
 
   <!-- build:js scripts/vendor.js -->
@@ -115,6 +173,8 @@
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/tether/dist/js/tether.js"></script>
   <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+  <script src="/bower_components/knockout/dist/knockout.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 

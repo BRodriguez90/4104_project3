@@ -1,5 +1,12 @@
 console.log('\'Allo \'Allo!');
+var smallCircles= ['top','right','bottom','left','top'];
 $(function(){
+  $('#fullpage').fullpage({
+    
+    navigation: true,
+    scrollingSpeed: 750
+  });
+
    $('.about').hide();
    $('doc-wrapper').hide();
 
@@ -7,15 +14,15 @@ $(function(){
      $('.seal').toggleClass('seal-hover');
    });
 
-   $('.letter-top,.letter-bot').click(function(){ // when click on top or bottom flap of letter trigger function
+   $('#seal-top,#seal-bot').click(function(){ // when click on top or bottom flap of letter trigger function
       audio.play();
-      $('.letter-top').slideToggle(1200); // toggle top flap of letter
+      $('.letter-top').slideToggle(1100); // toggle top flap of letter
       
       //$('.letter-bot').slideToggle(1500);
       $('.letter-bot').fadeOut(1300);  // fade out bottom flap of letter
 
       setTimeout(function(){
-         $('.about').fadeIn(2000); // fade in the text behind the letter
+         $('.about').fadeIn(2080); // fade in the text behind the letter
       },400);
 
       setTimeout(function(){

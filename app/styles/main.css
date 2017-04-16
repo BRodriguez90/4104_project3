@@ -9,6 +9,9 @@
     font-family: Pari;
     src: url(../fonts/Parisienne-Regular.ttf);
 }    
+/*------Navigation------*/
+
+
 
 /* Space out content a bit */
 
@@ -24,11 +27,14 @@
    width:100%;
    height: calc(100vh/2);
    background-color:#f0dab1;
-   border-bottom:1px solid #6f4b16;
+   /*border-bottom:1px solid #6f4b16;*/
+   box-shadow:inset 0px -1px 0px 0px #6f4b16;
    z-index: 400;
    position:absolute;
    object-fit: fill;
-   box-shadow: 0px 0px 10px 5px #ccc;
+}
+.seal{
+  cursor:pointer;
 }
 .seal-top-cont{
    width:100%;
@@ -72,6 +78,9 @@
    background-color: #fbecd1;
    top:0;
 }
+p.about{
+  padding-top:5%;
+}
 .about{
    display:none;
    width:75%;
@@ -79,31 +88,32 @@
    font-size:2.5em;
    color:rgba(62, 45, 20, 0.78);
    line-height: 180%;
-   padding-top:10%;
+   /*padding-top:10%;*/
    margin-left:auto;
    margin-right:auto;
    font-family:'Pari', cursive;
 }
-/*.continue{
-   width:0px;
-   height:0px;
-   border-top:30px solid black;
-   border-left:30px solid #cecece;
-   border-right:30px solid #cecece;
-   border-bottom:30px solid #cecece;
-   background:transparent;
-   margin-left:auto;
-   margin-right:auto;
-   margin-top:5%;
-}*/
+#about-body{
+  text-indent:65px;
+  padding-top:2.5%;
+}
+#nations{
+  margin-bottom:2%;
+}
+.nation-about{
+  line-height:170%;
+  font-size:1.15em;
+}
+
+
 .doc-wrapper{
    display:none;
 }
 
 hr{
-   -webkit-transform: rotate(45deg);
+ /*  -webkit-transform: rotate(45deg);
    transform: rotate(45deg);
-   margin-left:100vh; 
+   margin-left:100vh; */
 
 }
 
@@ -120,8 +130,7 @@ hr{
 
 /* Custom page header */
 .header {
-  padding-bottom: 1rem;
-  border-bottom: .05rem solid #e5e5e5;
+  /*padding-bottom: 1rem;*/
 }
 
 /* Make the masthead heading the same height as the navigation */

@@ -3,7 +3,9 @@
   "private": true,
   "dependencies": {
     "bootstrap": "~4.0.0-alpha.6",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "fullpage.js": "^2.9.4",
+    "knockout": "knockoutjs#^3.4.2"
   },
   "overrides": {
     "bootstrap": {
