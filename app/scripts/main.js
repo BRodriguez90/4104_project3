@@ -1,10 +1,14 @@
 console.log('\'Allo \'Allo!');
 $(function(){
  
-    ko.applyBindings({
-        userName: ko.observable('test')     // Initially blank
-    });
-   $('.about').hide();
+    var vm = {
+        name: ko.observable()
+    };
+    vm.name();
+    ko.applyBindings(vm);
+   
+
+   //$('.about').hide();
    //$('doc-wrapper').hide();
 
    $('.seal').hover(function(){           //fade out seal on hover
@@ -13,7 +17,12 @@ $(function(){
 
    $('#seal-top,#seal-bot').click(function(){ // when click on top or bottom flap of letter trigger function
       audio.play();
+        var to = $('#name_input').val();
 
+      if ( to == ''){
+        vm.name("Guest")
+       };
+       
        $('#fullpage').fullpage({
     
         navigation: true,
@@ -26,9 +35,14 @@ $(function(){
       $('.letter-bot').fadeOut(1300);  // fade out bottom flap of letter
 
       setTimeout(function(){
-         $('.about').fadeIn(2080); // fade in the text behind the letter
+        $('.about').fadeIn(2080); // fade in the text behind the letter
+        $('.about').textillate({in: { effect: 'fadeIn'} });
+        $('.about').on('inAnimationEnd.tlt', function () {
+        
+          
+        });
       },400);
-
+     
       setTimeout(function(){
          $('.letter-top').remove(); // remove the top of the letter
          $('#audio').remove(); // remove audio once "letter opens"

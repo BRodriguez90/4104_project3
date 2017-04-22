@@ -14,6 +14,7 @@
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -38,22 +39,27 @@
     </div>
   </div>
   <audio id="audio">
-     <source src="letter.ogg" type="audio/ogg">
-     <source src="letter.mp3" type="audio/mpeg">
+    <source src="letter.mp3" type="audio/mpeg"> 
+    <source src="letter.ogg" type="audio/ogg">
+    <source src="letter.wav" type="audio/wav">
   </audio>
   <div class="letter-bot">
     <div class="seal-bot-cont">
       <img src="images/seal_bot.png" class="seal" id="seal-bot" alt="Letter Seal" width="250" height="115">
     </div>
+    <div class="insert_name">
+     <label for="name_input">
+      <!--<span>To: </span>--><input type="text" placeholder="Enter your name" data-bind="value:name" id="name_input">
+      </label>
+    </div>
   </div>
   <div id="fullpage">
     <div class="section">
       <div class="letter-cont">
-        <p class="about" data-bind="textInput: userName" >To:</p>
+        <p class="about">To: <span id="name" data-bind="text:name">Guest</span></p>
 
         <p class="about" id="about-body">
-          The Spanish-American War took place in 1898. Magna sit proident voluptate aliqua Lorem excepteur anim eiusmod excepteur aute.
-          Mollit qui est cupidatat fugiat dolore in do laborum incididunt aliqua excepteur nulla officia.
+          The Spanish-American War took place in 1898. Magna sit proident voluptate aliqua Lorem excepteur anim eiusmod excepteur aute. Mollit qui est cupidatat fugiat dolore in do laborum incididunt aliqua excepteur nulla officia.
         </p>
         <div class="continue"></div>
       </div>
@@ -90,12 +96,12 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="usa">
-                      <img src="images/usa.svg" title="USA" alt="USA Flag" width="250" height="130">
+                      <img data-src="images/usa.svg" title="USA" alt="USA Flag" width="250" height="130">
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="spain">
-                      <img src="images/spain.svg" title="Spain" alt="Spain Flag" width="250" height="130">
+                      <img data-src="images/spain.svg" title="Spain" alt="Spain Flag" width="250" height="130">
                     </div>
                   </div>
                 </div>
@@ -124,12 +130,12 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="cuba">
-                      <img src="images/cuba.svg" title="Cuba" alt="Cuba Flag" width="250" height="130">
+                      <img data-src="images/cuba.svg" title="Cuba" alt="Cuba Flag" width="250" height="130">
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="filipino">
-                      <img src="images/filipino.svg" title="Philippines" alt="Philippines Flag" width="250" height="130">
+                      <img data-src="images/filipino.svg" title="Philippines" alt="Philippines Flag" width="250" height="130">
                     </div>
                   </div>
                 </div>
@@ -179,6 +185,8 @@
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
   <script src="/bower_components/knockout/dist/knockout.js"></script>
+  <script src="/bower_components/letteringjs/jquery.lettering.js"></script>
+  <script src="/bower_components/textillate/jquery.textillate.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
