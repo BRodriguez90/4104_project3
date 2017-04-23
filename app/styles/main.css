@@ -9,6 +9,17 @@
     font-family: Pari;
     src: url(../fonts/Parisienne-Regular.ttf);
 }    
+
+.section{
+background-color: rgb(251, 236, 209);
+}
+h2{
+  margin-bottom:2%;
+  font-family:'Roboto',sans-serif;
+  font-weight: 300;
+  font-size:3em;
+  padding-top: 35px;
+}
 /*------Navigation------*/
 
 
@@ -36,6 +47,27 @@
 .seal{
   cursor:pointer;
 }
+
+.grow{
+  animation-name: seal ;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes seal{
+   0% {
+    transform: scale(.3);
+   
+  }
+  50% {
+  
+  }
+  100% {
+    transform: scale(1.5);
+ 
+  }
+}
 .seal-top-cont{
    width:100%;
    /*margin-top:calc(100vh/3.8);*/
@@ -58,6 +90,7 @@
    margin-right:auto;
    position:static;
 }
+
 .seal-hover{
   opacity: 0.5;
 }
@@ -81,7 +114,7 @@
 .insert_name{
   margin-left: auto;
   margin-right: auto;
-  width:250px;
+  width:230px;
 }
 #name_input{
   text-align: center;
@@ -108,7 +141,7 @@ p.about{
    display:none;
    width:75%;
   /* font-size:1.7rem;*/
-   font-size:2.5em;
+   font-size:2.25em;
    color:rgba(62, 45, 20, 0.78);
    line-height: 180%;
    /*padding-top:10%;*/
@@ -118,10 +151,24 @@ p.about{
 }
 #about-body{
   /*text-indent:65px;*/
-  padding-top:2.5%;
+  padding-top:1%;
+}
+.regards{
+  display:none;
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: 'Pari', cursive;
+  font-size:2.25em;
+  color:rgba(62, 45, 20, 0.78);
+  margin-bottom:0;
 }
 #nations{
   margin-bottom:2%;
+  font-family:'Roboto',sans-serif;
+  font-weight: 300;
+  font-size:3em;
+  padding-top: 35px;
 }
 .nation-about{
   line-height:170%;
@@ -177,7 +224,102 @@ hr{
   color: #777;
   border-top: .05rem solid #e5e5e5;
 }
+/*=====================Third section===================*/
+.third{
+  position:absolute;
+  top:0;
+  width:100vw;
+}
 
+.doc-wrapper > .ship{
+  width:auto;
+}
+.row_maine{
+  
+}
+#ship{
+  z-index:800;
+  position:absolute;
+  bottom:75px;
+}
+.mine{
+  width:auto;
+  z-index:900;
+  position:absolute;
+  bottom:80px;
+  margin-left:50%;
+  margin-right:auto;
+  text-align:center;
+}
+#mine{
+  margin-left:auto;
+  margin-right:auto;
+  position:static;
+}
+.mine::after{
+  content:'';
+  position:absolute;
+  background-color:#333333;
+  height:80px;
+  transform: rotate(180deg);
+  width:1px;
+}
+.explode{
+  width:auto;
+  z-index:950;
+  position:absolute;
+  bottom:90px;
+  margin-left:47%;
+  margin-right:auto;
+  text-align:center;
+}
+#explode{
+  position:absolute;
+  bottom:40px;
+  opacity:0;
+}
+#ocean{
+  position:absolute;
+  width:100%;
+  min-height:20%;
+  bottom:0;
+  background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0, rgb(0,50,150)),
+  color-stop(0.50, rgb(0,150,255))
+  );
+}
+
+/*.wave{
+  background:rgb(251, 236, 209);
+  display:inline-block;
+  height:60%;
+  width:10px;
+  position:absolute;
+  -webkit-animation-name:             dostuff; 
+  -webkit-animation-duration:         0s; 
+  -webkit-animation-iteration-count:  10;
+  -webkit-transition-timing-function: ease-in-out;
+  animation-name:             dostuff; 
+  animation-duration:         0s; 
+  animation-iteration-count:  10;
+  transition-timing-function: ease-in-out;
+}*/
+
+
+@keyframes dostuff{
+  0%{
+    height:60%;
+  }
+  50%{ 
+    height:40%;
+  }
+  100%{ 
+    height:60%;
+  }
+}
 /* Customize container */
 @media (min-width: 48em) {
   .container {

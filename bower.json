@@ -6,7 +6,8 @@
     "modernizr": "~2.8.1",
     "fullpage.js": "^2.9.4",
     "knockout": "knockoutjs#^3.4.2",
-    "textillate": "^0.4.0"
+    "textillate": "^0.4.0",
+    "animejs": "^2.0.2"
   },
   "overrides": {
     "bootstrap": {
