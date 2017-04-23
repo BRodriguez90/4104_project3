@@ -14,56 +14,25 @@ $(function(){
      $('.seal').toggleClass('seal-hover');
    });
 
-   $(document).on('keydown', function(e){
-     if (e.keyCode == 13){
+    $(document).on('keydown', function(e){
+      if (e.keyCode == 13){
+        reveal();
+      }
+   });
+
+   $('#seal-top,#seal-bot').click(function(){ // when click on top or bottom flap of letter trigger function
+     
+    reveal();
+     
+   }); // end letter top - bot animation 
+      
+    function reveal(){
       audio.play();
       var to = $('#name_input').val();
 
       if ( to == ''){
         vm.name('Guest')
        };
-       
-       $('#fullpage').fullpage({
-    
-        navigation: true,
-        scrollingSpeed: 750,
-        onLeave: function(index, nextIndex, direction) {
-          if( (index == 1 || 2 || 4) && nextIndex == 3){
-
-            var ship_timeline = anime.timeline();
-            ship_timeline
-            .add({
-              targets: '.ship_cont #ship',
-              left: '480px',
-              easing: 'linear',
-              delay:2000
-            })
-            .add({
-              targets:'.explode #explode',
-              opacity:100,
-              easing:'linear',
-              delay:1000
-            })
-            .add({
-              targets:'.ship_cont #ship',
-              rotate: 45,
-              easing:'linear',
-            })
-            .add({
-              targets:'.explode #explode',
-              bottom:0,
-              opacity:0,
-              easing:'linear'
-            })
-            .add({
-              targets:'.ship_cont #ship',
-              bottom:10,
-              rotate:0,
-              easing:'linear'
-            });
-           }  //end if( index == 1 || 2|| 4 && nextIndex == 3)
-        }     // end on leave
-      });
 
       $('.letter-top').slideToggle(1100); // toggle top flap of letter
       
@@ -73,30 +42,21 @@ $(function(){
       setTimeout(function(){
         $('.about').fadeIn(2080); // fade in the text behind the letter
         $('.about').textillate({in: { effect: 'fadeIn'} });
-        $('.about').on('inAnimationEnd.tlt', function () {
-          
-        });
+
+        setTimeout(function(){
+          $('.regards').fadeIn();
+          $('.regards').textillate({ in: {effect: 'fadeIn'} });
+          },19000);
       },400);
      
       setTimeout(function(){
-         $('.letter-top').remove(); // remove the top of the letter
-         $('#audio').remove(); // remove audio once "letter opens"
+          $('.letter-top').remove(); // remove the top of the letter
+          $('#audio').remove(); // remove audio once "letter opens"
       },2000);
-      
-     // $('.doc-wrapper').fadeIn(); // fade in the rest of the website.
-     $('#fullpage').fadeIn();
-  }
- });
+        // $('.doc-wrapper').fadeIn(); // fade in the rest of the website.
+      $('#fullpage').fadeIn();
 
-   $('#seal-top,#seal-bot').click(function(){ // when click on top or bottom flap of letter trigger function
-      audio.play();
-      var to = $('#name_input').val();
-
-      if ( to == ''){
-        vm.name('Guest')
-       };
-      
-        $('#fullpage').fullpage({
+      $('#fullpage').fullpage({
     
         navigation: true,
         scrollingSpeed: 750,
@@ -107,24 +67,23 @@ $(function(){
             ship_timeline
            .add({
               targets: '.ship_cont #ship',
-              left: '480px',
-              easing: 'linear',
-              delay:2000
+              left: '40%',
+              easing: 'easeInOutQuad',
+              delay: 2000,
+              duration: 2500
             })
             .add({
               targets:'.explode #explode',
               opacity:100,
-              easing:'linear',
-              delay:1000
+              easing:'linear'
             })
             .add({
               targets:'.ship_cont #ship',
-              rotate: 45,
-              easing:'linear',
+              rotate: -10,
+              easing:'easeInOutQuad',
             })
             .add({
               targets:'.explode #explode',
-              bottom:0,
               opacity:0,
               easing:'linear'
             })
@@ -133,45 +92,21 @@ $(function(){
               bottom:-15,
               rotate:0,
               opacity:0,
-              easing:'linear'
+              easing:'easeInOutQuad'
             });
            }  //end if( index == 1 || 2|| 4 && nextIndex == 3)
         }     // end on leave
       });     //end full page
+     }        // end reveal function
 
-   
-      $('.letter-top').slideToggle(1100); // toggle top flap of letter
-      
-      //$('.letter-bot').slideToggle(1500);
-      $('.letter-bot').fadeOut(1300);  // fade out bottom flap of letter
 
-      setTimeout(function(){
-        $('.about').fadeIn(2080); // fade in the text behind the letter
-        $('.about').textillate({in: { effect: 'fadeIn'} });
-        setTimeout(function(){
-          $('.regards').fadeIn();
-          $('.regards').textillate({ in: {effect: 'fadeIn'} });
-        },19000);
-      },400);
-     
-      setTimeout(function(){
-         $('.letter-top').remove(); // remove the top of the letter
-         $('#audio').remove(); // remove audio once "letter opens"
-      },2000);
-     // $('.doc-wrapper').fadeIn(); // fade in the rest of the website.
-     $('#fullpage').fadeIn();
 
-  
 
-     
-   }); // end letter top - bot animation 
-      
-   
 
-   var ocean = document.getElementById('ocean'),
+  /* var ocean = document.getElementById('ocean'),
     waveWidth = 10,
     waveCount = Math.floor(window.innerWidth/waveWidth),
-    docFrag = document.createDocumentFragment();
+    docFrag = document.createDocumentFragment();*/
 
  /* for(var i = 0; i < waveCount; i++){
     var wave = document.createElement('svg');
@@ -181,7 +116,7 @@ $(function(){
     wave.style.webkitAnimationDelay = (i/100) + 's';
   }*/
 
-  ocean.appendChild(docFrag);
+  //ocean.appendChild(docFrag);
 
   
    

@@ -234,9 +234,7 @@ hr{
 .doc-wrapper > .ship{
   width:auto;
 }
-.row_maine{
-  
-}
+
 #ship{
   z-index:800;
   position:absolute;
@@ -268,14 +266,13 @@ hr{
   width:auto;
   z-index:950;
   position:absolute;
-  bottom:90px;
+  bottom:185px;
   margin-left:47%;
   margin-right:auto;
   text-align:center;
 }
 #explode{
   position:absolute;
-  bottom:40px;
   opacity:0;
 }
 #ocean{
@@ -320,6 +317,20 @@ hr{
     height:60%;
   }
 }
+
+.maine_para{
+  margin-top:50px;
+}
+
+#maine_photo{
+  margin-top:50px;
+}
+
+
+
+
+
+
 /* Customize container */
 @media (min-width: 48em) {
   .container {
@@ -334,7 +345,7 @@ hr{
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
+ /* border-bottom: .05rem solid #e5e5e5;*/
 }
 .jumbotron .btn {
   padding: .75rem 1.5rem;

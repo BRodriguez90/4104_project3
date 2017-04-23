@@ -56,6 +56,7 @@
   <div id="fullpage">
     <div class="section">
       <div class="letter-cont">
+        <div class="container-fluid">
         <p class="about">To: <span id="name" data-bind="text:name">Guest</span></p>
         <p class="about" id="about-body">
           The Spanish-American War took place in 1898. The war lasted a total of about 4 months. The cause of the war was sparked by the explosion of the USS Maine believed to have been at the hands of the Spainish. The actual cause of the explosion however was never confirmed and for many years remained a mystery...
@@ -65,6 +66,7 @@
         <div class="continue"></div>
       </div>
       <!-- .letter-cont -->
+      </div>
     </div>
     <div class="section">
       <div class="doc-wrapper">
@@ -143,13 +145,6 @@
               <!-- end col-6-->
             </div>
           </div>
-
-          <div class="row marketing">
-            <div class="col-lg-6">
-
-            </div>
-          </div>
-
           <!-- <div class="footer">
 
           </div>-->
@@ -170,27 +165,27 @@
               <div class="col-lg-1">
               </div>
               <div class="col-lg-5">
-                <p class="nation-about"> The sinking of the USS Maine is what's believed to have been what propelled the US into war with Spain. It
+                <p class="nation-about maine_para"> The sinking of the USS Maine is what's believed to have been what propelled the US into war with Spain. It
                   was believed that the explosion was caused by an ocean mine set in place by the Spanish. The USS Maine
                   suddenly exploded as it was on it's way to Cuba. The Cuban people were under Spanish rule and the US went
                   to help fight the Spanish alongside Cuba.
                 </p>
               </div>
               <div class="col-lg-6">
-                <img class="text-center" src="images/maine_ship.jpg" alt="USS Maine" width="500" height="300">
+                <img class="text-center" id="maine_photo" data-src="images/maine_ship.jpg" alt="USS Maine" width="500" height="250">
               </div>
             </div>
           </div>
         </div>
         <div id="ocean">
           <div class="ship_cont">
-            <img id="ship" src="images/sm_ship.png" alt="USS Maine" width="350">
+            <img id="ship" data-src="images/sm_ship.png" alt="USS Maine" width="350">
           </div>
           <div class="mine">
-            <img id="mine" src="images/sm_mine.png" alt="Ocean mine" width="30px">
+            <img id="mine" data-src="images/sm_mine.png" alt="Ocean mine" width="30px">
           </div>
           <div class="explode">
-            <img id="explode" src="images/sm_explode.png" alt="explosion" width="100">
+            <img id="explode" data-src="images/sm_explode.png" alt="explosion" width="100">
           </div>
         </div>
       </div>
@@ -205,7 +200,7 @@
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <p>The most famous of all the units fighting in Cuba, the "Rough Riders" was the name given to the First U.S. Volunteer Cavalry under the leadership of Theodore Roosevelt. Roosevelt resigned his position as Assistant Secretary of the Navy in May 1898 to join the volunteer cavalry. The original plan for this unit called for filling it with men from the Indian Territory, New Mexico, Arizona, and Oklahoma. However, once Roosevelt joined the group, it quickly became the place for a mix of troops ranging from Ivy League athletes to glee-club singers to Texas Rangers and Indians.</p>
+              <p class="nation-about">The most famous of all the units fighting in Cuba, the "Rough Riders" was the name given to the First U.S. Volunteer Cavalry under the leadership of Theodore Roosevelt. Roosevelt resigned his position as Assistant Secretary of the Navy in May 1898 to join the volunteer cavalry. The original plan for this unit called for filling it with men from the Indian Territory, New Mexico, Arizona, and Oklahoma. However, once Roosevelt joined the group, it quickly became the place for a mix of troops ranging from Ivy League athletes to glee-club singers to Texas Rangers and Indians.</p>
            </div>
            <div class="col-lg-6">
              <img src="images/rough-riders.jpeg" alt="Rough Riders">
