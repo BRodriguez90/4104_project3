@@ -15,14 +15,16 @@ background-color: rgb(251, 236, 209);
 }
 h2{
   margin-bottom:2%;
-  font-family:'Roboto',sans-serif;
+  font-family:'Pari',sans-serif;
   font-weight: 300;
   font-size:3em;
   padding-top: 35px;
 }
 /*------Navigation------*/
 
-
+#fp-nav ul li .fp-tooltip {
+  color:#c73e3e;
+}
 
 /* Space out content a bit */
 
@@ -164,15 +166,23 @@ p.about{
   margin-bottom:0;
 }
 #nations{
-  margin-bottom:2%;
+  margin-bottom:7%;
   font-family:'Roboto',sans-serif;
   font-weight: 300;
   font-size:3em;
   padding-top: 35px;
 }
+.usa,.spain{
+  text-align:center;
+}
+
+.nation-flag{
+  box-shadow:0px 0px 10px #333333;
+}
 .nation-about{
   line-height:170%;
   font-size:1.15em;
+  padding-right:5%;
 }
 
 /*=========Second Section=========*/
@@ -186,13 +196,6 @@ p.about{
 .doc-wrapper{
    /*display:none;*/
    background-color:#fbecd1;
-}
-
-hr{
- /*  -webkit-transform: rotate(45deg);
-   transform: rotate(45deg);
-   margin-left:100vh; */
-
 }
 
 
@@ -225,6 +228,12 @@ hr{
   border-top: .05rem solid #e5e5e5;
 }
 /*=====================Third section===================*/
+
+.switch-fonts{
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.3em !important;
+}
+
 .third{
   position:absolute;
   top:0;
@@ -234,7 +243,10 @@ hr{
 .doc-wrapper > .ship{
   width:auto;
 }
-
+.player{
+  position:absolute;
+  bottom:0;
+}
 #ship{
   z-index:800;
   position:absolute;
@@ -304,7 +316,12 @@ hr{
   animation-iteration-count:  10;
   transition-timing-function: ease-in-out;
 }*/
+/*=====================Fourth Section======================*/
 
+#rough-riders{
+  border:5px solid #fff;
+  box-shadow:0px 0px 10px #4c4c4c;
+}
 
 @keyframes dostuff{
   0%{
@@ -320,14 +337,20 @@ hr{
 
 .maine_para{
   margin-top:50px;
+  font-family: 'Pari', cursive;
+  font-size:1.4em;
 }
 
 #maine_photo{
   margin-top:50px;
+  box-shadow:0px 0px 10px #4c4c4c;
 }
 
 
-
+.fadeIn{
+ /* -webkit-animation-duration: 0.001s;
+  animation-duration: 0.001s;*/
+}
 
 
 
@@ -339,7 +362,7 @@ hr{
 
 }
 .container-narrow > hr {
-  margin: 2rem 0;
+  /*margin: 2rem 0;*/
 }
 
 /* Main marketing message and sign up button */

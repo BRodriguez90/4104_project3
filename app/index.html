@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
   <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+  <link rel="stylesheet" href="/bower_components/magic/magic.min.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -27,7 +28,7 @@
   <!-- endbuild -->
 </head>
 
-<body>
+<body class="fp-responsive">
   <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -70,42 +71,24 @@
     </div>
     <div class="section">
       <div class="doc-wrapper">
-        <!--
-        <div class="header">
-          <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-inverse p-4">
-                <h4 class="text-white">Collapsed content</h4>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
-              </div>
-            </div>
-            <nav class="navbar navbar-inverse bg-inverse">
-              <a class="navbar-brand" href="#">SA War</a>
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-            </nav>
-          </div>
-        </div>-->
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
               <h2 class="text-center" id="nations">Nations Involved</h2>
             </div>
           </div>
-          <div class="jumbotron">
+          <!--<div class="jumbotron">-->
             <div class="row">
               <div class="col-lg-6">
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="usa">
-                      <img data-src="images/usa.svg" title="USA" alt="USA Flag" width="250" height="130">
+                      <img data-src="images/usa.svg" class="nation-flag" title="USA" alt="USA Flag" width="250" height="130">
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="spain">
-                      <img data-src="images/spain.svg" title="Spain" alt="Spain Flag" width="250" height="130">
+                      <img data-src="images/spain.svg" class="nation-flag" title="Spain" alt="Spain Flag" width="250" height="130">
                     </div>
                   </div>
                 </div>
@@ -132,19 +115,19 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="cuba">
-                      <img data-src="images/cuba.svg" title="Cuba" alt="Cuba Flag" width="250" height="130">
+                      <img data-src="images/cuba.svg" class="nation-flag" title="Cuba" alt="Cuba Flag" width="250" height="130">
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="filipino">
-                      <img data-src="images/filipino.svg" title="Philippines" alt="Philippines Flag" width="250" height="130">
+                      <img data-src="images/filipino.svg" class="nation-flag" title="Philippines" alt="Philippines Flag" width="250" height="130">
                     </div>
                   </div>
                 </div>
               </div>
               <!-- end col-6-->
             </div>
-          </div>
+         <!-- </div>-->
           <!-- <div class="footer">
 
           </div>-->
@@ -177,6 +160,9 @@
             </div>
           </div>
         </div>
+         <audio id="exp">
+          <source src="explosion.wav" type="audio/wav">
+        </audio>
         <div id="ocean">
           <div class="ship_cont">
             <img id="ship" data-src="images/sm_ship.png" alt="USS Maine" width="350">
@@ -187,10 +173,11 @@
           <div class="explode">
             <img id="explode" data-src="images/sm_explode.png" alt="explosion" width="100">
           </div>
+          <div class="line player align-items"> <button class="play">Play</button> <button class="pause">Pause</button> <button class="restart">Restart</button></div>
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section"> <!-- Rough Riders-->
       <div class="doc-wrapper">
         <div class="container-fluid">
           <div class="row">
@@ -203,11 +190,11 @@
               <p class="nation-about">The most famous of all the units fighting in Cuba, the "Rough Riders" was the name given to the First U.S. Volunteer Cavalry under the leadership of Theodore Roosevelt. Roosevelt resigned his position as Assistant Secretary of the Navy in May 1898 to join the volunteer cavalry. The original plan for this unit called for filling it with men from the Indian Territory, New Mexico, Arizona, and Oklahoma. However, once Roosevelt joined the group, it quickly became the place for a mix of troops ranging from Ivy League athletes to glee-club singers to Texas Rangers and Indians.</p>
            </div>
            <div class="col-lg-6">
-             <img src="images/rough-riders.jpeg" alt="Rough Riders">
+             <img src="images/rough-riders1.jpg" class="img-responsive" id="rough-riders" alt="Rough Riders">
            </div>
           </div>
         </div>
-      </div>
+      </div> <!-- Doc wrapper-->
     </div>
   </div>
   <!-- Full page End-->
