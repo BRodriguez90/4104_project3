@@ -58,76 +58,79 @@
     <div class="section">
       <div class="letter-cont">
         <div class="container-fluid">
-        <p class="about">To: <span id="name" data-bind="text:name">Guest</span></p>
-        <p class="about" id="about-body">
-          The Spanish-American War took place in 1898. The war lasted a total of about 4 months. The cause of the war was sparked by the explosion of the USS Maine believed to have been at the hands of the Spainish. The actual cause of the explosion however was never confirmed and for many years remained a mystery...
-        </p>
-        <p class="regards">Regards,</p>
-        <p class="regards">TR</p>
-        <div class="continue"></div>
-      </div>
-      <!-- .letter-cont -->
+          <p class="about">To: <span id="name" data-bind="text:name">Guest</span></p>
+          <p class="about" id="about-body">
+            The Spanish-American War took place in 1898. The war lasted a total of about 4 months. The cause of the war was sparked by the explosion of the USS Maine believed to have been at the hands of the Spainish. The actual cause of the explosion however was never confirmed and for many years remained a mystery...
+          </p>
+          <p class="regards">Regards,</p>
+          <p class="regards">TR</p>
+          <div class="continue"></div>
+        </div>
+        <!-- .letter-cont -->
       </div>
     </div>
     <div class="section">
       <div class="doc-wrapper">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 text-center">
               <h2 class="text-center" id="nations">Nations Involved</h2>
             </div>
           </div>
           <!--<div class="jumbotron">-->
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="usa">
-                      <img data-src="images/usa.svg" class="nation-flag" title="USA" alt="USA Flag" width="250" height="130">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="spain">
-                      <img data-src="images/spain.svg" class="nation-flag" title="Spain" alt="Spain Flag" width="250" height="130">
-                    </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="usa">
+                    <img data-src="images/usa.svg" class="nation-flag" title="USA" alt="USA Flag" width="250" height="130">
                   </div>
                 </div>
-                <!-- end row-->
-              </div>
-              <div class="col-lg-6">
-                <p class="text-left nation-about">
-                  The main conflict involved the US and Spain though the reasons for war were many. The US feared that not gaining control
-                  of new territory and failing to colonize would give Spain the ability to grow in power. Thus the war with
-                  Spain came about that lasted 4 months.
-                </p>
-              </div>
-              <!--end col-6-->
-            </div>
-            <hr>
-            <!-- end row-->
-            <div class="row">
-              <div class="col-lg-6">
-                <p class="text-left nation-about">
-                  Cuba and the Philippines were under control of Spain at the time of the war. Both countries sought to gain independence from the Spanish. Alongside the US, Cuba and the Philippines fought the Spanish and were victorious. After the war Cuba gained it's independence and the Philipines was sold to the US for $20 million. The Philipine American war would follow soon after.
-                </p>
-              </div>
-              <div class="col-lg-6">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="cuba">
-                      <img data-src="images/cuba.svg" class="nation-flag" title="Cuba" alt="Cuba Flag" width="250" height="130">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="filipino">
-                      <img data-src="images/filipino.svg" class="nation-flag" title="Philippines" alt="Philippines Flag" width="250" height="130">
-                    </div>
+                <div class="col-lg-6">
+                  <div class="spain">
+                    <img data-src="images/spain.svg" class="nation-flag" title="Spain" alt="Spain Flag" width="250" height="130">
                   </div>
                 </div>
               </div>
-              <!-- end col-6-->
+              <!-- end row-->
             </div>
-         <!-- </div>-->
+            <div class="col-lg-6">
+              <p class="text-left nation-about usa-spain">
+                The main conflict involved the US and Spain though the reasons for war were many. The US feared that not gaining control
+                of new territory and failing to colonize would give Spain the ability to grow in power. Thus the war with
+                Spain came about that lasted 4 months.
+              </p>
+            </div>
+            <!--end col-6-->
+          </div>
+          <hr id="hr">
+          <!-- end row-->
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="text-left nation-about cuba-fili">
+                Cuba and the Philippines were under control of Spain at the time of the war. Both countries sought to gain independence from
+                the Spanish. Alongside the US, Cuba and the Philippines fought the Spanish and were victorious. After the
+                war Cuba gained it's independence and the Philipines was sold to the US for $20 million. The Philipine American
+                war would follow soon after.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="cuba">
+                    <img data-src="images/cuba.svg" class="nation-flag" title="Cuba" alt="Cuba Flag" width="250" height="130">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="filipino">
+                    <img data-src="images/filipino.svg" class="nation-flag" title="Philippines" alt="Philippines Flag" width="250" height="130">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end col-6-->
+          </div>
+          <!-- </div>-->
           <!-- <div class="footer">
 
           </div>-->
@@ -155,12 +158,12 @@
                 </p>
               </div>
               <div class="col-lg-6">
-                <img class="text-center" id="maine_photo" data-src="images/maine_ship.jpg" alt="USS Maine" width="500" height="250">
+                <img class="text-center" id="maine_photo" data-src="images/maine_ship1.jpg" alt="USS Maine" width="500" height="250">
               </div>
             </div>
           </div>
         </div>
-         <audio id="exp">
+        <audio id="exp">
           <source src="explosion.wav" type="audio/wav">
         </audio>
         <div id="ocean">
@@ -177,7 +180,8 @@
         </div>
       </div>
     </div>
-    <div class="section"> <!-- Rough Riders-->
+    <div class="section">
+      <!-- Rough Riders-->
       <div class="doc-wrapper">
         <div class="container-fluid">
           <div class="row">
@@ -186,15 +190,69 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6">
-              <p class="nation-about">The most famous of all the units fighting in Cuba, the "Rough Riders" was the name given to the First U.S. Volunteer Cavalry under the leadership of Theodore Roosevelt. Roosevelt resigned his position as Assistant Secretary of the Navy in May 1898 to join the volunteer cavalry. The original plan for this unit called for filling it with men from the Indian Territory, New Mexico, Arizona, and Oklahoma. However, once Roosevelt joined the group, it quickly became the place for a mix of troops ranging from Ivy League athletes to glee-club singers to Texas Rangers and Indians.</p>
-           </div>
-           <div class="col-lg-6">
-             <img src="images/rough-riders1.jpg" class="img-responsive" id="rough-riders" alt="Rough Riders">
-           </div>
+            <div class="col-lg-4 text-center">
+              <img data-src="images/teddy2.jpg" id="teddy" alt="Theodore Roosevelt">
+            </div>
+            <div class="col-lg-4">
+              <p class="riders-about">The most famous of all the units fighting in Cuba, the "Rough Riders" was the name given to the First U.S.
+                Volunteer Cavalry under the leadership of Theodore Roosevelt. Roosevelt resigned his position as Assistant
+                Secretary of the Navy in May 1898 to join the volunteer cavalry. The original plan for this unit called for
+                filling it with men from the Indian Territory, New Mexico, Arizona, and Oklahoma. However, once Roosevelt
+                joined the group, it quickly became the place for a mix of troops ranging from Ivy League athletes to glee-club
+                singers to Texas Rangers and Indians.</p>
+            </div>
+            <div class="col-lg-4">
+              <img data-src="images/rough-riders1.jpg" id="rough-riders" alt="Rough Riders">
+            </div>
           </div>
         </div>
-      </div> <!-- Doc wrapper-->
+      </div>
+      <!-- Doc wrapper-->
+    </div>
+    <div class="section">
+      <div class="doc-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-center" id="treaty">Treaty of Paris-1898</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="treaty_para">
+              <p>
+                After 6 months of fighting comissioners met in Paris on October 1, 1898. They went to put together a treaty that would bring
+                an end to the war. The two sides faced tough negotiations as most of Europe was sympathetic to the Spanish.
+                After some back and forth the U.S. paid Spain 20million to purchase the Philippines. The Americans also gained
+                control of Guam and Puerto Rico, Spain also relinquished it's claim to Cuba. The treaty was finally signed
+                on December 10,1898.
+              </p>
+              <h4>Spain</h4>
+              <div class="won">
+                  <img id="filip" src="images/filipino.svg" alt="Philippines Flag" width="150" height="80">
+                  <img id="puertorico" src="images/puertorico.svg" alt="Puerto Rican Flag" width="150" height="80">
+                  <img id="guam" src="images/guam.png" alt="Guam Flag" width="150" height="80">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="wrap-t">
+                <img data-src="images/paper_signed.png" id="treaty-paper" alt="Paper">
+                <img src="images/treaty-seal-1.png" id="seal2" alt="seal">
+                <button class="animated flash infinite" id="sign">Sign</button>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h3>United States of America</h3>
+              <div class="won1">
+                  <img id="filip" src="images/filipino.svg" alt="Philippines Flag" width="250" height="130">
+                  <img id="puertorico" src="images/puertorico.svg" alt="Puerto Rican Flag" width="250" height="170">
+                  <img id="guam" src="images/guam.png" alt="Guam Flag" width="250" height="130">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Full page End-->

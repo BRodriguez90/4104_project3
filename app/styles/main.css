@@ -19,6 +19,10 @@ h2{
   font-weight: 300;
   font-size:3em;
   padding-top: 35px;
+  border-bottom: 1px solid #6f4b16;
+  width:40%;
+  margin-left:auto;
+  margin-right:auto;
 }
 /*------Navigation------*/
 
@@ -167,7 +171,7 @@ p.about{
 }
 #nations{
   margin-bottom:7%;
-  font-family:'Roboto',sans-serif;
+  font-family:'Pari',sans-serif;
   font-weight: 300;
   font-size:3em;
   padding-top: 35px;
@@ -182,7 +186,12 @@ p.about{
 .nation-about{
   line-height:170%;
   font-size:1.15em;
-  padding-right:5%;
+}
+.usa-spain{
+   padding-right:5%;
+}
+.cuba-fili{
+  padding-left:5%;
 }
 
 /*=========Second Section=========*/
@@ -198,7 +207,9 @@ p.about{
    background-color:#fbecd1;
 }
 
-
+#hr{
+  width:95%;
+}
 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -230,7 +241,7 @@ p.about{
 /*=====================Third section===================*/
 
 .switch-fonts{
-  font-family: 'Roboto', sans-serif !important;
+  /*font-family: 'Roboto', sans-serif !important;*/
   font-size: 1.3em !important;
 }
 
@@ -245,7 +256,14 @@ p.about{
 }
 .player{
   position:absolute;
-  bottom:0;
+  bottom:15px;
+  left:15px;
+}
+.player button{
+  border:1px solid #fff;
+  background:transparent;
+  color:#fff;
+  cursor:pointer;
 }
 #ship{
   z-index:800;
@@ -301,6 +319,20 @@ p.about{
   );
 }
 
+.maine_para{
+  margin-top:30px;
+ /* font-family: 'Pari', cursive;*/
+  line-height:150%;
+  font-size:1.4em;
+ 
+}
+
+#maine_photo{
+  margin-top:30px;
+  box-shadow:0px 0px 10px #4c4c4c;
+  border:5px solid rgb(255, 255, 255);
+  border-radius:2px;
+}
 /*.wave{
   background:rgb(251, 236, 209);
   display:inline-block;
@@ -318,9 +350,21 @@ p.about{
 }*/
 /*=====================Fourth Section======================*/
 
+#teddy{
+  margin-top:40px;
+  border:5px solid #fff;
+  box-shadow:0px 0px 10px #4c4c4c;
+}
 #rough-riders{
   border:5px solid #fff;
   box-shadow:0px 0px 10px #4c4c4c;
+  margin-top:40px;
+  border-radius:2px;
+}
+.riders-about{
+  line-height: 170%;
+  font-size:1.15em;
+  margin-top:40px;
 }
 
 @keyframes dostuff{
@@ -335,24 +379,39 @@ p.about{
   }
 }
 
-.maine_para{
-  margin-top:50px;
-  font-family: 'Pari', cursive;
-  font-size:1.4em;
+/*=============================Fith Section=========================*/
+
+.treaty_para{
+  padding-left:20px;
+  line-height:160%;
+  font-size:1.1em;
 }
-
-#maine_photo{
-  margin-top:50px;
-  box-shadow:0px 0px 10px #4c4c4c;
+#treaty-paper{
+  box-shadow:0px 0px 10px #333333;
 }
-
-
-.fadeIn{
- /* -webkit-animation-duration: 0.001s;
-  animation-duration: 0.001s;*/
+.won1{
+  display:none;
 }
-
-
+#seal2{
+  position:absolute;
+  bottom:10px;
+  left:45%;
+  display:none;
+}
+#sign{
+  position:absolute;
+  bottom:35px;
+  left:30%;
+  font-family:'Pari',cursive;
+  border:1px solid #6f4b16;
+  font-size:1.5em;
+  background:transparent;
+  cursor:pointer;
+}
+.flash{
+  animation-delay: 2s;
+  animation-duration: 4s;
+}
 
 /* Customize container */
 @media (min-width: 48em) {

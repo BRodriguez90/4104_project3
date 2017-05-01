@@ -62,20 +62,30 @@ $(function () {
     // $('.doc-wrapper').fadeIn(); // fade in the rest of the website.
     $('#fullpage').fadeIn();
 
-    $('.maine_para').hover(function () {
+   /* $('.maine_para').hover(function () {
       $('.maine_para').toggleClass('switch-fonts');
-    });
+    });*/
+
+    var lineDrawing = anime({
+      targets: '#lineDrawing .lines path',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: 'easeInOutSine',
+      duration: 1500,
+      delay: function(el, i) { return i * 250 },
+      direction: 'alternate',
+      loop: true
+  });
 
     $('#fullpage').fullpage({
 
       navigation: true,
-      scrollingSpeed: 750,
+      scrollingSpeed: 700,
       navigationPosition: 'right',
       lazyLoading: true,
       verticalCentered: false,
       easing: 'easeInOutCubic',
       fitToSection: true,
-      navigationTooltips: ['Letter', 'Nations', 'The Maine', 'Rough Riders'],
+      navigationTooltips: ['Letter', 'Nations', 'The Maine', 'Rough Riders', 'Treaty of Paris'],
 
       //event
       // afterLoad: function(anchorLink, index){
@@ -83,6 +93,10 @@ $(function () {
         var audio = document.getElementById('exp');
         // if( index == 2 && nextIndex == 3){
         if (nextIndex == 3) {
+
+          $('#maine_photo').addClass('magictime vanishIn');
+          $('#ocean').addClass('magictime spaceInDown');
+          $('.maine_para').addClass('animated fadeInUp');
           $('.play,.restart').click(function () {
             setTimeout(function () {
               audio.volume = 0.1;
@@ -132,10 +146,33 @@ $(function () {
               easing: 'easeInOutQuad'
             });
 
+          // controls for the timeline
           document.querySelector('#ocean .play').onclick = ship_timeline.play;
           document.querySelector('#ocean .pause').onclick = ship_timeline.pause;
           document.querySelector('#ocean .restart').onclick = ship_timeline.restart;
         } //end if( index == 1 || 2|| 4 && nextIndex == 3)
+
+        if(nextIndex == 2){
+          $('.usa,.spain').addClass('magictime spaceInLeft');
+          $('.cuba,.filipino').addClass('magictime spaceInRight');
+          $('.usa-spain,.cuba-fili').addClass('animated zoomIn');
+        }
+        if(nextIndex != 2){
+          $('.usa,.spain').removeClass('magictime spaceInLeft');
+          $('.cuba,.filipino').removeClass('magictime spaceInRight');
+        }
+        if(nextIndex == 4){
+          $('#rough-riders,#teddy').addClass('magictime vanishIn');
+        }
+        if(nextIndex == 5){
+          $('#sign').click(function(){
+            $('#seal2').fadeIn(1500);
+            $('#sign').fadeOut(1500);
+            $('.won').fadeOut(1500);
+            $('.won1').fadeIn(1500);
+          });
+          $('.wrap-t').addClass('magictime spaceInDown');
+        }
       } // end on leave
     }); //end full page
   } // end reveal function
