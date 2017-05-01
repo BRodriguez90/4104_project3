@@ -403,12 +403,14 @@ p.about{
   bottom:35px;
   left:30%;
   font-family:'Pari',cursive;
-  border:1px solid #6f4b16;
+  border:none;
+  border-bottom:1px solid #6f4b16;
   font-size:1.5em;
   background:transparent;
   cursor:pointer;
 }
 .flash{
+  background:#d4b06e;
   animation-delay: 2s;
   animation-duration: 4s;
 }
